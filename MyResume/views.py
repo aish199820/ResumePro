@@ -11,16 +11,16 @@ def skills_view(request):
     context={'Skills':{'Python':70,'Javascript':20,'Django':50,"HTML":60,'CSS':70}}
     return render(request,'MyResume/skills.html',context)
 
-def contact_view(request):
-    if request.method == 'POST':
-        name=request.POST['name']
-        email=request.POST['email']
-        feedback=request.POST['text']
-        print(name)
-        print(email)
-        print(feedback)
+# def contact_view(request):
+#     if request.method == 'POST':
+#         name=request.POST['name']
+#         email=request.POST['email']
+#         feedback=request.POST['text']
+#         print(name)
+#         print(email)
+#         print(feedback)
 
-    return render(request,'MyResume/contact.html')
+#     return render(request,'MyResume/contact.html')
 
 
 
