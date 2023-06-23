@@ -1,0 +1,60 @@
+{% extends 'MyResume/base.html' %}
+{% load static %}
+
+<!-- CSS Block  -->
+{% block css%}
+{% endblock css%}
+
+
+<!-- JS Block -->
+{% block js %}
+{% endblock js %}
+
+<!-- tile block -->
+{% block title %}
+<title>Education Page</title>
+{% endblock title %}
+
+
+
+{% block body %}
+
+<div class="container">
+    <!-- Header -->
+
+    <div class="container py-3 bg-secondary text-center rounded-3 shadow">
+        <h1 class="display-5 text-light">Education Details</h1>
+    </div>
+
+    <!-- body -->
+
+    <div class="container border border my-5 shadow">
+        <table class="table">
+            <thead>
+                <th>Sr. No</th>
+                <th>Certificate</th>
+                <th>Marks</th>
+                <th>Year of Passing</th>
+                <th>Board/University</th>
+            </thead>
+
+            <tbody>
+            {% for i,j in course.items %}
+            
+            <tr>
+            {% for k,m in j.items %}
+
+            
+                <td>{{m}}</td>
+            
+            {% endfor %}
+
+        </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+    </div>
+
+</div>
+
+{% endblock body %}

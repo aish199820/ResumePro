@@ -1,0 +1,56 @@
+{% extends 'MyResume/base.html' %}
+{% load static %}
+
+<!-- css -->
+    {% block css%}
+    {% endblock css%}
+
+
+    <!-- JS Block -->
+    {% block js %}
+    {% endblock js %}
+
+    <!-- tile block -->
+    {% block title %}
+    {% endblock title %}
+
+
+    {% block body %}
+
+    <div class="container">
+    <!-- Header -->
+
+    <div class="container py-3 bg-secondary text-center rounded-3 shadow">
+        <h1 class="display-5 text-light">Health And Fitness Website</h1>
+    </div>
+
+    <!-- body -->
+
+
+    <div class="container  my-4 py-3 shadow">
+    <div class="container">
+        <p id="para" class="text-justify">Health and fitness website shows various ways of keeping our body fit and healthy by perfoming various excercises and yoga postures by displaing videos of same. As keeping ourself fit is the need of the time now to avoid getting various disorders and health issues.</p>
+    </div>
+
+
+    <div class="container">
+        <label for="">Tools/Platform used for the Porject</label>
+        <ul>
+            <li>.Net</li>
+            <li>MySQL</li>
+            <li>Bootstrap</li>
+            <!-- <ul>
+                <li>Zip</li>
+                <li>Curl</li>
+                <li>Zlip</li>
+                <li>GD library</li>
+                <li>Mcrypt</li>
+                <li>Mbstrings</li>
+            </ul> -->
+        </ul>
+    </div>
+    
+    <button id="moredetails" class="mx-4 btn btn-primary"><a href="{% url 'project' %}" class="card-link text-decoration-none text-light">Back</a></button>
+</div>
+</div>
+    {% endblock body %}

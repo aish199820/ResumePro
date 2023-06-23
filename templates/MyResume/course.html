@@ -1,0 +1,67 @@
+{% extends 'MyResume/base.html' %}
+{% load static %}
+
+<!-- CSS Block  -->
+{% block css%}
+{% endblock css%}
+
+
+<!-- JS Block -->
+{% block js %}
+{% endblock js %}
+
+<!-- tile block -->
+{% block title %}
+<title>Course Page</title>
+{% endblock title %}
+
+
+
+{% block body %}
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="container py-3 bg-secondary text-center rounded-3 shadow">
+        <h1 class="display-5 text-light">Courses</h1>
+    </div>
+
+    <!-- body -->
+
+    <div class="container">
+
+        <div class="container my-5">
+
+            <table class="table border shadow">
+            
+                <thead>
+                    <th>Course</th>
+                    <th>Institute</th>
+                    <th>Year</th>
+                </thead>
+                {% for i,j in courses.items %}
+
+            
+
+                
+    
+                <tr>
+                    {% for k,m in j.items %}
+
+                    <td><span class="lead">{{m}}</span></td>
+
+
+                    {% endfor %}
+                </tr>
+                
+                {% endfor %}
+
+    
+    
+            </table>
+        </div>
+        
+    </div>
+
+</div>
+{% endblock body %}

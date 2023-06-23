@@ -1,0 +1,47 @@
+{% extends 'MyResume/base.html' %}
+{% load static %}
+
+<!-- CSS Block  -->
+{% block css%}
+{% endblock css%}
+
+
+<!-- JS Block -->
+{% block js %}
+{% endblock js %}
+
+<!-- tile block -->
+{% block title %}
+<title>Home Page</title>
+{% endblock title %}
+
+
+
+{% block body %}
+
+<div class="container">
+
+    <div class="container text-center">
+
+        <img class="rounded-3 rounded-3 shadow" src="{% static 'MyResume/Images/aish.jpg'%}" alt="NO Image" width="200px">
+    </div>
+
+    <div class="container shadow text-secondary">
+        <p class="display-6 mt-4">Hello,</p>
+        <p class="fs-3">First of all, thank you for giving me this opportunity to introduce myself.
+
+            I am Aishwarya Jadhav. From Dombivli, Maharashtra.
+            I Have 4 years of experience as a Business Analyst.
+            I completed my Degree in Bachelor in Science(Information Technology) in 2018 with 64%.
+            <!-- I did my HSE (Higher School Education) from the Open MSBHSE in 2020 With 56% Marks in Non- the Medical stream. -->
+            <!-- And I did my SSC (Secondary School Certificate) From MSBSSE in 2017 with 71% Marks.
+            Coming to my strength, I am a quick learner, a hardworking and self-motivated person and always want to be in a learning zone.
+             My short-term goal is to get a job in a reputed organization to grow my skill and knowledge and build experience with the organization. 
+            My long-term goal is to achieve a higher position. 
+            Coming to my family background, We are 4 members in my family including me: My parents and one elder brother. -->
+            That's all about me. Thanks again for this opportunity.</p>
+
+    </div>
+</div>
+
+{% endblock body %}

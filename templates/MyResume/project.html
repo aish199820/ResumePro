@@ -1,0 +1,57 @@
+{% extends 'MyResume/base.html' %}
+{% load static %}
+
+<!-- CSS Block  -->
+{% block css%}
+{% endblock css%}
+
+
+<!-- JS Block -->
+{% block js %}
+{% endblock js %}
+
+<!-- tile block -->
+{% block title %}
+<title>Project Page</title>
+{% endblock title %}
+
+
+
+{% block body %}
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="container py-3 bg-secondary text-center rounded-3 shadow">
+        <h1 class="display-5 text-light">Project</h1>
+    </div>
+
+    <!-- body -->
+
+    <div class="container my-5">
+
+        <div class="card float-start shadow" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Health and Fitness Website</h5>
+              <h6 class="card-subtitle mb-2 text-muted">T.Y.B.Sc(Information Technology)</h6>
+              <p class="card-text">This Project is based on health and Fitness</p>
+              <button id="moredetails" class="btn btn-primary"><a href="{% url 'health' %}" class="card-link text-decoration-none text-light">More Details</a></button>
+              <!-- <a href="#" class="card-link text-decoration-none">More Details</a> -->
+            </div>
+        </div>
+        
+        <div class="card float-end shadow" style="width: 18rem;">
+            <div class="card-body ">
+              <h5 class="card-title">Grace and glow🦋 shop</h5>
+              <h6 class="card-subtitle mb-2 text-muted">L1 Sqaud Infotech Project</h6>
+              <p class="card-text">This project is designed to be used by commercial users for selling their products.</p>
+              <button id="moredetails" class="btn btn-primary"><a href="{% url 'shop' %}" class="card-link text-decoration-none text-light">More Details</a></button>
+              <!-- <a href="#" class="card-link text-decoration-none">More Details</a> -->
+            </div>
+          </div>
+          
+    </div>
+
+
+</div>
+{% endblock body %}

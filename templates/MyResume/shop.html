@@ -1,0 +1,65 @@
+{% extends 'MyResume/base.html' %}
+{% load static %}
+
+<!-- CSS Block  -->
+{% block css%}
+{% endblock css%}
+
+
+<!-- JS Block -->
+{% block js %}
+{% endblock js %}
+
+<!-- tile block -->
+{% block title %}
+<title>Project Page</title>
+{% endblock title %}
+
+
+{% block body %}
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="container py-3 bg-secondary text-center rounded-3 shadow">
+        <h1 class="display-5 text-light">Grace and Glow🦋
+        </h1>
+    </div>
+
+    <!-- body -->
+
+    <div class="container  my-4 py-3 shadow">
+    <div class="container">
+
+        <p id="para" class="text-justify">This is Project can be used by Commercial users after incorporating some changes.
+        </p>
+        <p class="text-justify">It is about Cosmetics and skin care products.
+        </p>
+        <p>It is implemented using python where object oriented concepts are extensively used also it contains MySQL database for data storage.
+            It Mainly has Admin Section and User section</p>
+    </div>
+
+
+    <div class="container">
+        <label for="">Tools/Platform used for the Porject</label>
+        <ul>
+            
+            <li>MySQL</li>
+            <li>Python and its libraries/modules</li>
+            <ul>
+                <li>MySQL.Connector</li>
+                <li>Random module</li>
+                <li>RE module</li>
+                <li>Coloroma library</li>
+                <li>PrettyTable library</li>
+                
+            </ul>
+        </ul>
+    </div>
+    
+    <button id="moredetails" class="mx-4 btn btn-primary"><a href="{% url 'project' %}" class="card-link text-decoration-none text-light">Back</a></button>
+</div>
+</div>
+
+
+    {% endblock body %}

@@ -1,0 +1,57 @@
+{% extends 'MyResume/base.html' %}
+{% load static %}
+
+<!-- CSS Block  -->
+{% block css%}
+{% endblock css%}
+
+
+<!-- JS Block -->
+{% block js %}
+{% endblock js %}
+
+<!-- tile block -->
+{% block title %}
+<title>Experience Page</title>
+{% endblock title %}
+
+
+
+{% block body %}
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="container py-3 bg-secondary text-center rounded-3 shadow">
+        <h1 class="display-5 text-light">Experience</h1>
+    </div>
+
+    <!-- body -->
+
+    <div class="container my-5 shadow">
+
+        <p class="display-5 text-secondary"><strong>Analyst</strong></p>
+        <p class="fs-4 text-secondary"><strong>eClerx services pvt.ltd</strong></p>
+        <p>August 28, 2018 - November 9, 2022</p>
+        <p>
+            <label for="" class="text-secondary"><strong>Job Profile</strong></label>
+            <ul class="text-secondary"><li>Responsible for Processing Service Transaction as per requirement  </li>
+                <li>Worked on Data Research Tools (Salesforce.com, Delta etc)</li>
+                <li>Project analysis and reporting</li>
+                <li>Generated the reports related to Productivity, Data Quality and Resource Utilization</li>
+                <li>Worked on Daily reports (V-lookup, H-lookup, Conditional Formatting, Pivot Chart)</li>
+            </ul>
+            <!-- <label class="text-secondary pb-3" for=""><strong>Team Lead 2020-2021</strong></label> -->
+            <!-- <ul class="text-secondary">
+                <li>Worked as a mediator between technical team,client and users</li>
+                <li>Have changed the working of few modules such as <strong>Delete Doctor,Add Customer,Modify Customer</strong> as per the client requirement in Phyzii web-application</li>
+                <li>Performed UATs</li>
+                <li>Worked with MIS team to send data as per client requirement and have created new reports on front-end</li>
+
+            </ul> -->
+            </p>
+        
+    </div>
+
+</div>
+{% endblock body %}

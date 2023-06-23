@@ -1,0 +1,47 @@
+{% extends 'MyResume/base.html' %}
+{% load static %}
+
+<!-- CSS Block  -->
+{% block css%}
+{% endblock css%}
+
+
+<!-- JS Block -->
+{% block js %}
+{% endblock js %}
+
+<!-- tile block -->
+{% block title %}
+<title>Skills Page</title>
+{% endblock title %}
+
+
+
+{% block body %}
+
+
+<div class="container">
+
+    <!-- header -->
+    <div class="container py-3 bg-secondary text-center rounded-3 shadow">
+        <h1 class="display-5 text-light">Skills Details</h1>
+    </div>
+
+    <!-- Table -->
+    <div class="container my-5 shadow">
+
+        <table class="table">
+            {% for i,j in Skills.items %}
+
+            <tr>
+                <td><span class="lead">{{i}}</span></td>
+                <td><progress max="100" value="{{j}}"></progress>{{j}}%</td>
+            </tr>
+            {% endfor %}
+
+
+        </table>
+    </div>
+</div>
+
+{% endblock body %}
